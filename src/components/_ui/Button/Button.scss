@@ -1,0 +1,16 @@
+@use "../../../assets/styles/mixins" as *;
+@use "../../../assets/styles/vars" as *;
+.button {
+  @include font("Poppins-Regular", 20px, 100%, 400);
+  color: white;
+  background-color: var(--blue);
+  padding: 13px 20px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: white;
+    color: var(--blue);
+    transition: all 0.5s ease;
+  }
+}

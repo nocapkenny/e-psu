@@ -1,0 +1,23 @@
+@use "../../../assets/styles/mixins" as *;
+@use "../../../assets/styles/vars" as *;
+
+.input {
+  @include font("Poppins-Regular", 20px, 100%, 400);
+  border: 2px solid #00000033;
+  background-color: transparent;
+  padding: 13px 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  width: 100%;
+  &::placeholder {
+    color: #00000033;
+    transition: all 0.5s ease;
+  }
+  &:focus,
+  &:hover {
+    border: 2px solid var(--blue);
+    &::placeholder {
+      color: var(--blue);
+    }
+  }
+}

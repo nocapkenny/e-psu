@@ -1,0 +1,9 @@
+@use './mixins' as *;
+
+@include font-face(Oswald, '../fonts/Oswald', 700, normal, ttf);
+@include font-face(Inter-Regular, '../fonts/Inter-Regular', 400, normal, otf);
+@include font-face(Poppins-Light, '../fonts/Poppins-Light', 300, normal, ttf);
+@include font-face(Poppins-Regular, '../fonts/Poppins-Regular', 400, normal, ttf);
+@include font-face(Poppins-SemiBold, '../fonts/Poppins-SemiBold', 600, normal, ttf);
+@include font-face(Poppins-Bold, '../fonts/Poppins-Bold', 700, normal, ttf);
+

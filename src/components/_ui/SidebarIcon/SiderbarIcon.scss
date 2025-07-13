@@ -1,0 +1,43 @@
+@use "../../../assets/styles/mixins" as *;
+@use "../../../assets/styles/vars" as *;
+
+.sidebar-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 252px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  &__icon {
+    width: 24px;
+    height: 24px;
+    padding-top: 2px;
+  }
+  &__text {
+    @include font("Poppins-Regular", 20px, 100%, 400);
+    color: white;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    background-color: #ffffff0d;
+    .sidebar-icon__text {
+      opacity: 1;
+    }
+    .sidebar-icon__icon {
+      path {
+        stroke-opacity: 1 !important;
+      }
+    }
+    .sidebar-icon__exit {
+      path {
+        stroke-opacity: 1 !important;
+      }
+    }
+  }
+}

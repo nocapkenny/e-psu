@@ -1,0 +1,45 @@
+@use './assets/styles/mixins' as *;
+@use './assets/styles/fonts' as *;
+@use './assets//styles/vars' as *;
+@use './assets/styles/generics' as *;
+
+html {
+  width: 100vw;
+  overflow: hidden auto;
+}
+
+body {
+  min-width: 320px;
+  box-sizing: border-box;
+  overflow: hidden auto;
+  min-height: var(--vh);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: var(--white);
+}
+
+.body--no-scroll {
+  overflow: hidden;
+  height: var(--vh);
+}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header,
+main,
+footer {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1460px;
+  padding: 0 30px;
+}
+
+
